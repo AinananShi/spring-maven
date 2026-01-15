@@ -62,7 +62,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.ainanan }}
-          password: ${{ secrets.K7haO3b6!?!? }}
+          password: ${{ secrets.MDP }}
 
       - name: Build & Push Docker image
         run: |
