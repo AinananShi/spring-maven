@@ -6,17 +6,18 @@ import org.springframework.boot.test.context.GetMapping;
 import org.springframework.boot.test.context.RestController;
 
 
-@SpringBootTest
-class DemoApplicationTests {
+@SpringBootApplication
+public class DemoGithubApplication {
 
-	@Test
-	void contextLoads() {
+	public static main(String[] args){
+		SpringApplication.run(DemoGithubApplication.class, args);
 	}
+}
 
-	@RestController
-	class HelloWorldController{
-		@GetMapping("/")
-		public String sayHello(){
-			return "Nuggets";
-		}
+@RestController
+class HelloWorldController{
+	@GetMapping("/")
+	public String sayHello(){
+		return "Nuggets";
+	}
 }
